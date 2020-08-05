@@ -1,38 +1,254 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --title-color: #000;
+  --text-color: #000;
+  --btn-color: #ffc000;
+}
+
+/** Global*/
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--title-color);
+}
+
+h1,
+h2 {
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: lighter;
+}
+
+span img.icon {
+  width: 70px;
+}
+
+section .container {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+a.cta-btn {
+  background-color: var(--btn-color);
+  font-weight: bold;
+  width: 400px;
+  padding: 15px 0px;
+  font-size: 0.9rem;
+}
+
+.card {
+  border: none;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-title {
+  margin-bottom: 0.75rem;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h2.big-title {
+  font-size: 4rem;
+  margin-left: -130px;
+  margin-bottom: 60px;
+  margin-top: 10px;
+}
+
+.mt-n8 {
+  margin-top: -8rem;
+}
+
+.text-size-2 {
+  font-size: 1.2rem;
+}
+
+.bg-grey {
+  background-color: #f4f4f4;
+  border-radius: 6px;
+  padding: 20px 15px;
+}
+
+.partners div {
+  margin: 20px 0px;
+}
+
+/** Header */
+
+header {
+  height: 100px;
+}
+
+a.nav-link {
+  font-weight: bold;
+}
+
+.navbar-light{
+  background-color: #fff;
+  z-index: 2;
+}
+
+
+/** Section Form */
+
+.form-control::placeholder {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.form-control {
+  border: 2px solid #000;
+}
+
+.btn-form {
+  background-color: var(--btn-color);
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+p b span:first-child{
+  color: #ffc000 ;
+}
+
+/** Footer */
+
+footer {
+  background-color: #0085ff;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 10px 0px;
+  margin-top: 6rem;
+}
+
+footer h6 {
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+ul.list-footer {
+  list-style: none;
+}
+.logo-footer {
+  font-size: 20px;
+}
+
+.logo-footer::after {
+  content: '';
+  display: block;
+  width: 78px;
+  height: 1px;
+  background: #fff;
+  margin-left: 30px;
+}
+.logo-footer::before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 1px;
+  background: #fff;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+  border-bottom: 1px #fff solid;
+  padding: 10px 0px;
+  width: 220px;
+}
+
+
+
+.contact-info::before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 1px;
+  background: #fff;
+  margin-bottom: 14px;
+}
+div.contact-info:first-child {
+  background-color: #ccc;
+}
+
+img.logo-agenoa{
+  width: 330px;
+}
+
+@media (max-width: 991px) {
+  h1,
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  h2.big-title {
+    font-size: 2rem;
+    margin-left: -94px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+
+  .mt-n8 {
+    margin-top: -5rem;
+  }
+
+  .partners img {
+    max-width: 100px;
+  }
+  span img.icon {
+    width: 50px;
+  }
+
+  .contact-info {
+    width: 150px;
+}
+}
+
+@media (max-width: 767px) {
+  h1,
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  h2.big-title {
+    font-size: 2rem;
+    margin: 20px 0px;
+  }
+  .mt-n8 {
+    margin-top: 0rem;
+  }
+  .text-size-2 {
+    font-size: 1rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 575px) {
+  h1,
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
   }
-  to {
-    transform: rotate(360deg);
+
+  .partners div {
+    width: 30%;
+  }
+
+  a.cta-btn {
+    width: 310px;
+  }
+  img.logo-agenoa{
+    width: 100%;
+   
   }
 }

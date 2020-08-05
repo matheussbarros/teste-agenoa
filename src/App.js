@@ -1,24 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import { Header } from './components/header/Header'
+import { SeguroDeO } from './components/seguroDeO/SeguroDeO'
+import { Objetivo } from './components/objetivo-seguro/Objetivo'
+import { Coberturas } from './components/coberturas/Coberturas'
+import { SeguroProtege } from './components/seguro-protege/SeguroProtege'
+import { SobreCoinsure } from './components/sobre-coinsure/SobreCoinsure'
+import { Desmontracao } from './components/desmostracao/Desmontracao'
+import { Equipe } from './components/equipe-dedicada/Equipe'
+import { SobreAgenoa } from './components/sobre-agenoa/SobreAgenoa'
+import { Parceiros } from './components/parceiros/Parceiros'
+import { Footer } from './components/footer/Footer'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <main>
+        <SeguroDeO />
+        <Objetivo />
+        <Coberturas />
+        <SeguroProtege />
+        <SobreCoinsure />
+        <Desmontracao />
+        <Equipe />
+        <SobreAgenoa />
+        <Parceiros />
+      </main>
+      <Footer />
     </div>
   );
 }
